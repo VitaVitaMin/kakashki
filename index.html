@@ -125,7 +125,28 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
         }
+        /* Контейнер для кнопки */
+        .button-container {
+            margin: 40px 0;
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        /* Стили для кнопки-ссылки */
+        .button-link {
+            display: inline-block;
+            background: linear-gradient(90deg, #8b4513 0%, #a0522d 100%);
+            color: #f8e9d9;
+            text-decoration: none;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+        }
         .custom-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(139, 69, 19, 0.6);
@@ -180,6 +201,19 @@
                 width: 50px;
                 height: 50px;
             }
+            .rounded-image {
+                border-radius: 15px; /* Сглаживание углов */
+                width: 300px;
+                height: 200px;
+                object-fit: cover; /* Сохраняет пропорции изображения */
+            }
+        
+            .circle-image {
+                border-radius: 50%; /* Делает изображение круглым */
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
         }
     </style>
 </head>
@@ -196,10 +230,24 @@
 
         <main>
             <div class="hero">
-                <h1>Добро пожаловать в мир грызения говна!</h1>
-                <p>Грызть какашки эщкере 52</p>
+                <h1>💩Добро пожаловать в мир грызения говна!💩</h1>
+                <p>💩Грызть какашки эщкере 52💩</p>
+                    <img src="images.jpg" alt="Описание" class="rounded-image">
                 <p>💩 - это не просто слово, это грызть какашки.💩 Присоединяйтесь к нашему сообществу!💩</p>
-                
+                <div class="audio-container">
+                    <div class="audio-iframe">
+                        <iframe 
+                            width="110" 
+                            height="200" 
+                            src="https://www.myinstants.com/instant/gryzt-kakashki-normis-8377/embed/" 
+                            frameborder="0" 
+                            scrolling="no"
+                            loading="lazy"
+                            title="Аудио кнопка - Грызть какашки"
+                            allow="autoplay">
+                        </iframe>
+                    </div>
+                </div>
                 <div class="button-container">
                     <a href="https://t.me/+9m2Y5M7tpidiY2Ji" class="custom-button">💩Присоединиться к грызению говна💩</a>
                 </div>
