@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эщкере Сайт</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #3a2a1d 0%, #5c4033 100%);
+            color: #f8e9d9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #f8e9d9;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            background: rgba(139, 69, 19, 0.3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #8b4513;
+            color: #d2b48c;
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 5px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .hero {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 24px;
+            background: rgba(89, 60, 31, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(210, 180, 140, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #d2b48c 0%, #8b4513 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #d2b48c;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #8b4513;
+            font-weight: 700;
+            background: rgba(210, 180, 140, 0.2);
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .button-container {
+            margin: 40px 0;
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-button {
+            background: linear-gradient(90deg, #8b4513 0%, #a0522d 100%);
+            color: #f8e9d9;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+        }
+
+        .custom-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 0;
+            color: #d2b48c;
+            font-size: 0.875rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            
+            .hero p {
+                font-size: 1.125rem;
+            }
+            
+            .hero {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.875rem;
+            }
+            
+            .logo {
+                font-size: 1.25rem;
+            }
+            
+            .logo-img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="images.jpg" alt="💩" class="logo-img">
+                </div>
+                <span>💩Грызть Студио Какашек💩</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>Добро пожаловать в мир грызения говна!</h1>
+                <p>Грызть какашки эщкере 52</p>
+                <p>💩 - это не просто слово, это грызть какашки.💩 Присоединяйтесь к нашему сообществу!💩</p>
+                
+                <div class="button-container">
+                    <a href="https://t.me/+9m2Y5M7tpidiY2Ji" class="custom-button">💩Присоединиться к грызению говна💩</a>
+                </div>
+                
+                <p>Наши проекты всегда получаются на <span class="highlight">1488%</span> лучше, чем у конкурентов. Эщкере качество!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 1488 💩 Студио. Все права  незащищены. 💩 - это навсегда!</p>
+        </footer>
+    </div>
+</body>
+</html>
